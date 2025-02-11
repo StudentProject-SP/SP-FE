@@ -1,0 +1,11 @@
+{
+  "name": "@soup/config",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "tsconfig.base.json",
+    "tsconfig.next.json",
+    "tsconfig.package.json",
+    "tsconfig.react.json"
+  ]
+}
