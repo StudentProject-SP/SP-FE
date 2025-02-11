@@ -1,6 +1,3 @@
-# `Soup`
-
-<br>
 <div style="text-align: center;">
     <img src="soup.png" alt="Soup" /><br/>
 
@@ -31,13 +28,13 @@
 
 ### Packages
 
-`design-system` - Soup 애플리케이션 내부에서 사용되는 디자인 시스템입니다.
+`design-system` - 애플리케이션 내부에서 사용되는 디자인 시스템
 
 ## Contributors
 
-<a href="https://github.com/Jeong-Ag">
-    <img src="https://avatars.githubusercontent.com/u/128335727?s=64&v=4" style="border-radius: 50%"/>
+<a href="https://github.com/Jeong-Ag" style="border-radius: 50%">
+    <img src="https://avatars.githubusercontent.com/u/128335727?s=64&v=4" />
 </a>
-<a href="https://github.com/cho4u4o">
-    <img src="https://avatars.githubusercontent.com/u/128016678?s=64&v=4" style="border-radius: 50%"/>
+<a href="https://github.com/cho4u4o" style="border-radius: 50%">
+    <img src="https://avatars.githubusercontent.com/u/128016678?s=64&v=4" />
 </a>
