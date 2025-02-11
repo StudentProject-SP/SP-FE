@@ -1,84 +1,43 @@
-# Turborepo starter
+# `Soup`
 
-This Turborepo starter is maintained by the Turborepo core team.
+<br>
+<div style="text-align: center;">
+    <img src="soup.png" alt="Soup" /><br/>
 
-## Using this example
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FStudentProject-SP%2FSP-FE&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
 
-Run the following command:
+</div>
 
-```sh
-npx create-turbo@latest
+```plain text
+대학생과 떨어질 수 없는 프로젝트,
+스프와 함께 진행해봐요!
 ```
 
-## What's inside?
+## Key Features
 
-This Turborepo includes the following packages/apps:
+`메인 보드` - 프로젝트 하나 당 관련 기능이 모여 있는 메인 보드를 사용해 효율적으로 진행 상황을 파악하고 업무를 관리하며 소통할 수 있어요.
 
-### Apps and Packages
+`그룹 보드` - 프로젝트 내부에서 역할에 따라 나뉜 그룹 보드 내부에서 진행 상황과 정보를 공유하며 함께 협업할 수 있습니다.
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+## Structure
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+일관된 사용자 경험 제공과 개발 편의성을 고려하여, 랜딩 페이지와 웹 서비스를 하나의 **모노레포** 환경으로 구성했어요.
 
-### Utilities
+### Apps
 
-This Turborepo has some additional tools already setup for you:
+`land` - 랜딩 페이지
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+`web` - 웹 애플리케이션
 
-### Build
+### Packages
 
-To build all apps and packages, run the following command:
+`design-system` - Soup 애플리케이션 내부에서 사용되는 디자인 시스템입니다.
 
-```
-cd my-turborepo
-pnpm build
-```
+## Contributors
 
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+<a href="https://github.com/Jeong-Ag">
+    <img src="https://avatars.githubusercontent.com/u/128335727?s=64&v=4" style="border-radius: 50%"/>
+</a>
+<a href="https://github.com/cho4u4o">
+    <img src="https://avatars.githubusercontent.com/u/128016678?s=64&v=4" style="border-radius: 50%"/>
+</a>
