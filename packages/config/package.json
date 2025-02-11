@@ -7,10 +7,7 @@
     "tsconfig.base.json",
     "tsconfig.next.json",
     "tsconfig.package.json",
-    "tsconfig.react.json",
-    "esconfig.base.js",
-    "esconfig.next.js",
-    "esconfig.library.js"
+    "tsconfig.react.json"
   ],
   "devDependencies": {
     "@eslint/js": "^9.20.0",

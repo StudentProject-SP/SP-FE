@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        command: [build]
+        command: [lint, build]
 
     steps:
       - name: Checkout
