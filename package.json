@@ -1,5 +1,5 @@
 {
-  "name": "sp-fe",
+  "name": "soup",
   "private": true,
   "scripts": {
     "build": "turbo build",
