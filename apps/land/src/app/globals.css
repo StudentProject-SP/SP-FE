@@ -57,3 +57,26 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: rgb(255, 166, 0) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(234, 230, 220) !important;
+  opacity: 0.7;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: rgb(255, 166, 0) !important;
+}
