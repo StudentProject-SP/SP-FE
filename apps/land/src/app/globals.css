@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --color-text-dark: rgb(61, 56, 47);
+  --color-text-light: rgb(159, 156, 149);
+  --color-sub: rgb(234, 230, 220);
+  --color-important: rgb(255, 0, 0);
+  --color-point: rgb(255, 166, 0);
+  --color-border: rgb(218, 212, 207);
+}
+
+@layer base {
+  html,
+  body {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: var(--font-pretendard-medium), sans-serif;
+  }
+}
+
+.boxShadow {
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.talkboxRight {
+  @apply rounded-r-[100px] rounded-bl-[140px];
+}
+
+.talkboxLeft {
+  @apply rounded-l-[100px] rounded-br-[140px];
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #3d382f;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
