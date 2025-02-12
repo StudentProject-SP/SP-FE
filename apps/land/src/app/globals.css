@@ -12,6 +12,8 @@
   --color-important: rgb(255, 0, 0);
   --color-point: rgb(255, 166, 0);
   --color-border: rgb(218, 212, 207);
+  --breakpoint-lg: 1920px;
+  --breakpoint-md: 1024px;
 }
 
 @layer base {
