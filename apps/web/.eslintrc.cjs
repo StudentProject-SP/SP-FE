@@ -1,3 +1,4 @@
 module.exports = {
-  ignorePatterns: ["dist", "coverage"],
+  extends: ['../../.eslintrc.cjs', 'next/core-web-vitals'],
+  ignorePatterns: ['dist', 'coverage'],
 };
