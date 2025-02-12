@@ -1,8 +1,8 @@
 export const TEXT = {
   HEADER: {
-    TITLE: "대학생과 함께하는 프로젝트, 스프와 함께 진행해봐요",
+    TITLE: "대학생과 떨어질 수 없는 프로젝트,n스프와 함께 진행해봐요",
     SUBTITLE:
-      "개별보드, 게시판으로 팀원들의 상황을 공유받고 질문보드, 표, API 보드 등 기능들로 역할을 진행해요",
+      "개별보드, 게시판으로 팀원들의 상황을 공유받고n질문보드, 표, API 보드 등 기능들로 역할을 진행해요",
   },
   FOOTER: {
     COPYRIGHT: "© 2024 Soup. All rights reserved.",
