@@ -7,6 +7,7 @@ import { Footer, Nav } from "@/widgets/menu/ui";
 export const metadata: Metadata = {
   title: "스프, 대학생 프로젝트 함께해요!",
   description: "",
+  icons: "/favicon/favicon.ico",
 };
 
 const pretendardBold = localFont({
