@@ -1,53 +1,56 @@
 import { cn, parse } from "@/shared/utils";
-import { TEXT } from "@/widgets/home/model";
+import { OPINION } from "@/widgets/home/model";
+
+interface OpinionUnitProps {
+  reversed: boolean;
+  text: string;
+  image: string;
+}
+
+interface OpinionBoxProps {
+  children: React.ReactNode;
+  reversed?: boolean;
+}
 
 export default function OpinionUnit({
   reversed,
-  index,
-}: {
-  reversed: boolean;
-  index: number;
-}) {
+  text,
+  image,
+}: OpinionUnitProps) {
   if (reversed) {
     return (
       <div className="flex h-fit w-full gap-x-2">
         <div className="h-38 flex w-full justify-end">
           <OpinionBox reversed={reversed}>
-            <div>{parse(TEXT.OPINION[index - 1])}</div>
+            <div>{parse(text)}</div>
           </OpinionBox>
         </div>
-        <Icon index={index} />
+        <Icon image={image} />
       </div>
     );
   }
   return (
     <div className="flex h-fit w-full gap-x-2">
-      <Icon index={index} />
+      <Icon image={image} />
       <div className="h-38 flex w-full justify-start">
         <OpinionBox>
-          <div>{parse(TEXT.OPINION[index - 1])}</div>
+          <div>{parse(text)}</div>
         </OpinionBox>
       </div>
     </div>
   );
 }
 
-function Icon({ index }: { index: number }) {
+function Icon({ image }: { image: string }) {
   return (
     <div
       className="size-38 flex-shrink-0 rounded-[50%] bg-cover bg-center"
-      style={{ backgroundImage: `url(/images/people-${index}.png)` }}
+      style={{ backgroundImage: `url(${image})` }}
     />
   );
 }
 
-function OpinionBox({
-  children,
-  reversed = false,
-}: {
-  children: React.ReactNode;
-  reversed?: boolean;
-}) {
+function OpinionBox({ children, reversed = false }: OpinionBoxProps) {
   return (
     <div
       className={cn(

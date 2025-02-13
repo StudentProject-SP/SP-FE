@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import Image from "next/image";
+import { CAROUSEL_DATA } from "@/widgets/home/model";
 
 export default function FeatureCarousel() {
   return (
@@ -25,11 +26,11 @@ export default function FeatureCarousel() {
           modules={[Pagination, Navigation, Autoplay]}
           className="mySwiper"
         >
-          {[1, 2, 3, 4].map((val) => (
-            <SwiperSlide key={val}>
+          {CAROUSEL_DATA.map((data) => (
+            <SwiperSlide key={data.id}>
               <Image
-                src={`/images/land-slide-${val}.png`}
-                alt={"1"}
+                src={data.image}
+                alt={`${data.id}`}
                 width={1000}
                 height={559}
                 priority={true}
