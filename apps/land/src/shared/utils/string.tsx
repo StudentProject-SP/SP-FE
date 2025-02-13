@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]): string {
 }
 
 export function parse(input: string, classNames?: string[]) {
-  return input.split("n").map((val, index) => (
+  return input.split("\n").map((val, index) => (
     <p key={index} className={classNames && classNames[index]}>
       {val}
     </p>
