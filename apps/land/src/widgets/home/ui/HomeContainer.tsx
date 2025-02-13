@@ -2,7 +2,7 @@ import Image from "next/image";
 import LandHeaderImg from "../../../../public/images/land-header.png";
 import OpinionUnit from "./OpinionUnit";
 
-import { TEXT } from "@/widgets/home/model";
+import { OPINION, TEXT } from "@/widgets/home/model";
 import { parse } from "@/shared/utils";
 import FeatureCarousel from "./FeatureCarousel";
 
@@ -17,8 +17,13 @@ export default function HomeContainer() {
         <p className="text-xl">{TEXT.HOME.LAND_MESSAGE_1}</p>
         <p className="text-xl font-bold">{TEXT.HOME.LAND_MESSAGE_2}</p>
         <div className="mt-20 flex h-fit w-[68%] flex-col gap-y-8">
-          {[1, 2, 3].map((i) => (
-            <OpinionUnit key={i} reversed={i % 2 === 0} index={i} />
+          {OPINION.map((data) => (
+            <OpinionUnit
+              key={data.id}
+              reversed={data.reversed}
+              text={data.text}
+              image={data.image}
+            />
           ))}
         </div>
         <div className="mt-24 flex flex-col items-center justify-center">
