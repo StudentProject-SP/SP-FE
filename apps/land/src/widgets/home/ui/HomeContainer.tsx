@@ -43,10 +43,12 @@ function Header() {
         <div>
           {parse(TEXT.HEADER.TITLE, [
             'text-md md:text-lg',
-            'text-xl md:text-2xl',
+            'text-xl md:text-2xl font-bold',
           ])}
         </div>
-        <div className="text-sm">{parse(TEXT.HEADER.SUBTITLE)}</div>
+        <div className="hidden text-sm md:block">
+          {parse(TEXT.HEADER.SUBTITLE)}
+        </div>
         <button className="border-text-dark rounded-4xl md:text-md w-fit cursor-pointer border-[1px] bg-black/20 p-4 py-2 text-sm focus:outline-none md:px-6 md:py-4">
           바로 시작하기
         </button>
