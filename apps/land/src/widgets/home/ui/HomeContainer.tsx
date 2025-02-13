@@ -1,10 +1,10 @@
-import Image from "next/image";
-import LandHeaderImg from "../../../../public/images/land-header.png";
-import OpinionUnit from "./OpinionUnit";
+import Image from 'next/image';
+import LandHeaderImg from '../../../../public/images/land-header.png';
+import OpinionUnit from './OpinionUnit';
 
-import { OPINION, TEXT } from "@/widgets/home/model";
-import { parse } from "@/shared/utils";
-import FeatureCarousel from "./FeatureCarousel";
+import { OPINION, TEXT } from '@/widgets/home/model';
+import { parse } from '@/shared/utils';
+import FeatureCarousel from './FeatureCarousel';
 
 export default function HomeContainer() {
   return (
@@ -42,8 +42,8 @@ function Header() {
       <div className="absolute inset-0 box-border flex size-full flex-col justify-center gap-y-4 px-10 text-white md:px-40">
         <div>
           {parse(TEXT.HEADER.TITLE, [
-            "text-md md:text-lg",
-            "text-xl md:text-2xl",
+            'text-md md:text-lg',
+            'text-xl md:text-2xl',
           ])}
         </div>
         <div className="text-sm">{parse(TEXT.HEADER.SUBTITLE)}</div>

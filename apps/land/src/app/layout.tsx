@@ -1,26 +1,26 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
 
-import "./globals.css";
-import { Footer, Nav } from "@/widgets/menu/ui";
+import './globals.css';
+import { Footer, Nav } from '@/widgets/menu/ui';
 
 export const metadata: Metadata = {
-  title: "스프, 대학생 프로젝트 함께해요!",
-  description: "",
-  icons: "/favicon/favicon.ico",
+  title: '스프, 대학생 프로젝트 함께해요!',
+  description: '',
+  icons: '/favicon/favicon.ico',
 };
 
 const pretendardBold = localFont({
-  src: "../assets/fonts/Pretendard-Bold.otf",
-  variable: "--font-pretendard-bold",
+  src: '../assets/fonts/Pretendard-Bold.otf',
+  variable: '--font-pretendard-bold',
 });
 const pretendardSemiBold = localFont({
-  src: "../assets/fonts/Pretendard-SemiBold.otf",
-  variable: "--font-pretendard-semibold",
+  src: '../assets/fonts/Pretendard-SemiBold.otf',
+  variable: '--font-pretendard-semibold',
 });
 const pretendardMedium = localFont({
-  src: "../assets/fonts/Pretendard-Medium.otf",
-  variable: "--font-pretendard-medium",
+  src: '../assets/fonts/Pretendard-Medium.otf',
+  variable: '--font-pretendard-medium',
 });
 
 export default function RootLayout({

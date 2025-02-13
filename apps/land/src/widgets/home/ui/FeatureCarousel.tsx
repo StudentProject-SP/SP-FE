@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-import Image from "next/image";
-import { CAROUSEL_DATA } from "@/widgets/home/model";
+import Image from 'next/image';
+import { CAROUSEL_DATA } from '@/widgets/home/model';
 
 export default function FeatureCarousel() {
   return (
